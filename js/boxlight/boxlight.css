@@ -1,0 +1,99 @@
+.boxlight {
+  opacity: 0;
+  position: relative;
+  display: none;
+  z-index: 1002;
+}
+.boxlight-overflow {
+  position: fixed;
+  overflow-y: scroll;
+  width: 100%;
+  height: 100%;
+}
+.box-overlay {
+  position: fixed;
+  top: -500%;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0;
+  z-index: 1000;
+  transition: opacity 0.3s linear;
+}
+.box-overlay.active {
+  top: 0;
+  opacity: 0.5;
+}
+.wrap-boxlight-youtube {
+  max-width: 853px;
+  margin: auto;
+  background-color: #000;
+  position: relative;
+  z-index: 1002;
+}
+.youtube-inner {
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+.boxlight-youtube {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.wrapp-box {
+  position: fixed;
+  display: table;
+  width: 100%;
+  height: 100%;
+  top: -500%;
+  left: 0;
+  transition: opacity 0.3s linear;
+  opacity: 0;
+  z-index: 1001;
+}
+.wrapp-box.boxlight-h {
+  display: block;
+  overflow: hidden;
+}
+.wrapp-box.boxlight-h .wrapp-box-inner {
+  display: block;
+  overflow-Y: auto;
+}
+.wrapp-box.active {
+  opacity: 1;
+  top: 0;
+}
+.wrapp-box.active .boxlight {
+  opacity: 1;
+  display: block;
+}
+.wrapp-box-inner {
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+.close-boxlight {
+  border: 1px solid #000;
+  position: absolute;
+  top: 5px;
+  display: block;
+  right: 5px;
+  width: 35px;
+  height: 35px;
+  line-height: 28px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 100%;
+  color: #000;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 20;
+}
+.close-boxlight:after {
+  content: "x";
+}

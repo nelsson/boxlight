@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" >
+	<title>Boxlight - Demos</title>
+	<link rel="stylesheet" type="text/css" href="js/boxlight/boxlight.css?v=1.0"/>
+	<link rel="stylesheet" type="text/css" href="css/styles.css?v=1"/>
+
+
+</head>
+<body>
+
+
+<a href="https://www.youtube.com/watch?v=gamBptB8OAE&feature=youtu.be" class="open-boxlight" data-type="video-youtube">ver video youtube</a>
+
+<br><br>
+<a href="https://vimeo.com/20257568" class="open-boxlight" data-type="video-vimeo">ver video vimeo</a>
+
+
+<br><br>
+<a href="http://w.areminds.com/nelson/boxlight/media/video-demo.mp4" class="open-boxlight" data-type="video-html">ver video html5</a>
+
+<br><br>
+
+<a href="#contenido1" class="open-boxlight">open contenido</a>
+<div id="contenido1" class="boxlight w-content">
+	<figure>
+		<img src="http://placehold.it/650x150" width="650" height="150" alt="">
+	</figure>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro accusamus maxime nulla assumenda, eaque voluptas voluptatem nobis odio, natus, praesentium veritatis accusantium reprehenderit totam ipsum molestias architecto eos quam autem.
+		lorem*20
+		
+	</p>
+</div>
+
+<br>
+<br>
+<br>
+<a href="#contenido2" class="open-boxlight">open contenido</a>
+<div id="contenido2" class="boxlight w-content">
+	<figure>
+		<img src="http://placehold.it/650x150" width="650" height="150" alt="">
+	</figure>
+	<h1>title</h1>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro accusamus maxime nulla assumenda, eaque voluptas voluptatem nobis odio, natus, praesentium veritatis accusantium reprehenderit totam ipsum molestias architecto eos quam autem.
+		lorem*20
+		
+	</p>
+	<figure>
+		<img src="http://placehold.it/650x150" width="650" height="150" alt="">
+	</figure>	
+</div>
+
+	
+	
+<script src="js/jquery1.8.3.min.js" type="text/javascript"></script>
+<script src="js/boxlight/boxlight.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('.open-boxlight').boxlight();		
+	});
+</script>
+</body>
+</html>

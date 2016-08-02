@@ -352,3 +352,10 @@ br {
   max-width: 100%;
   height: auto;
 }
+.myboxlight .box-overlay {
+  background-color: #cd853f;
+}
+.myboxlight .close-boxlight {
+  background-color: #cd853f;
+  color: #fff;
+}

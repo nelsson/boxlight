@@ -32,16 +32,18 @@ $(function(){
 			event.preventDefault();
 			/* Act on the event */
 			selector = $(this);
+			remove_cc = selector.closest('.wrapp-box').attr('custom-class');
+			console.log(remove_cc);
+
 			$('.wrapp-box.active .boxlight').appendTo('body');
 			//removiendo customclass
 
-			remove_cc = selector.closest('.wrapp-box').attr('custom-class');
 			// console.log(remove_cc);
 			vacio =false;
 			// console.log(vacio);
 			if (!remove_cc == vacio) {
-				selector.closest('.wrapp-box').removeClass(remove_cc);
-				selector.closest('.wrapp-box').removeAttr('custom-class');
+				$('.wrapp-box').removeClass(remove_cc);
+				$('.wrapp-box').removeAttr('custom-class');
 			}
 
 

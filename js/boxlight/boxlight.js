@@ -73,6 +73,7 @@ $(function(){
 		//active overlay and boxlight
 		selector.click(function(event) {
 			event.preventDefault()
+			$('body').addClass('boxlight-overflow')
 			tipoin = $(this).attr('data-type');
 			// console.log(tipoin);
 
@@ -185,7 +186,7 @@ $(function(){
 
 				if (elementh > heightscreen) {
 					element.addClass('boxlight-h');
-					$('body').addClass('boxlight-overflow')
+					
 				}
 			}
 
